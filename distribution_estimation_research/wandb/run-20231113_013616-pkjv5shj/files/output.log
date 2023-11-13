@@ -1,0 +1,87 @@
+Initializing set 1
+Initializing set 2
+Initializing set 3
+Initializing set 4
+Initializing set 5
+Loaded dataset..
+Training model differentiating set 0 and set 1
+Epoch 0
+Epoch 1
+Epoch 2
+Epoch 3
+Epoch 4
+Epoch 5
+Epoch 6
+Epoch 7
+Epoch 8
+Epoch 9
+Training model differentiating set 1 and set 2
+Epoch 0
+[34m[1mwandb[39m[22m: [33mWARNING[39m Serializing object of type ndarray that is 960112 bytes
+[34m[1mwandb[39m[22m: [33mWARNING[39m Serializing object of type ndarray that is 960112 bytes
+Epoch 1
+Epoch 2
+Epoch 3
+Epoch 4
+Epoch 5
+Epoch 6
+Epoch 7
+Epoch 8
+Epoch 9
+[34m[1mwandb[39m[22m: [33mWARNING[39m Serializing object of type ndarray that is 960112 bytes
+Training model differentiating set 2 and set 3
+Epoch 0
+[34m[1mwandb[39m[22m: [33mWARNING[39m Serializing object of type ndarray that is 960112 bytes
+Epoch 1
+Epoch 2
+Epoch 3
+Epoch 4
+Epoch 5
+Epoch 6
+Epoch 7
+Epoch 8
+Epoch 9
+[34m[1mwandb[39m[22m: [33mWARNING[39m Serializing object of type ndarray that is 960112 bytes
+[34m[1mwandb[39m[22m: [33mWARNING[39m Serializing object of type ndarray that is 960112 bytes
+Training model differentiating set 3 and set 4
+Epoch 0
+Epoch 1
+Epoch 2
+Epoch 3
+Epoch 4
+Epoch 5
+Epoch 6
+Epoch 7
+Epoch 8
+Epoch 9
+[34m[1mwandb[39m[22m: [33mWARNING[39m Serializing object of type ndarray that is 960112 bytes
+[34m[1mwandb[39m[22m: [33mWARNING[39m Serializing object of type ndarray that is 960112 bytes
+Training model differentiating set 4 and set 5
+Epoch 0
+Epoch 1
+Epoch 2
+Epoch 3
+Epoch 4
+Epoch 5
+Epoch 6
+Epoch 7
+Epoch 8
+Epoch 9
+[34m[1mwandb[39m[22m: [33mWARNING[39m Serializing object of type ndarray that is 960112 bytes
+[34m[1mwandb[39m[22m: [33mWARNING[39m Serializing object of type ndarray that is 960112 bytes
+Trained models...
+Testing 0th iteration
+Testing 1th iteration
+Testing 2th iteration
+Testing 3th iteration
+Testing 4th iteration
+Traceback (most recent call last):
+  File "experiments/distribution_analysis.py", line 90, in <module>
+    torch.save(model_states, filename)
+  File "/opt/anaconda3/lib/python3.8/site-packages/torch/serialization.py", line 376, in save
+    with _open_file_like(f, 'wb') as opened_file:
+  File "/opt/anaconda3/lib/python3.8/site-packages/torch/serialization.py", line 230, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/opt/anaconda3/lib/python3.8/site-packages/torch/serialization.py", line 211, in __init__
+    super(_open_file, self).__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: ''
